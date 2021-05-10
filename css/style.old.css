@@ -1,0 +1,311 @@
+/* START Regole generali */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", "sans-serif";
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #333;
+	background-color: #fff;
+
+}
+
+img{
+	max-width: 100%;
+}
+
+/* END Regole generali */
+
+/* START Regole Header */
+
+.navbar{
+	position: fixed;
+	flex-wrap: wrap;
+	background-color: #576071;
+	min-height: 40px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.container{
+	flex-wrap: wrap;
+	flex-basis: 8.3%;		
+	margin: 0 auto;
+	right: 100px;
+	width: 90%;
+	background-color: #576071;
+	z-index: 1;
+}
+
+.container li{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10px 0 10px;
+	border-right: 1px solid white;	
+	text-align: center;
+	height: 40px;
+}
+
+.container #login{
+	background-color: #49b8f1;
+	padding: 10px 2% 0 2%;
+	font-size: 100%;
+	border: none;
+	display: none;
+}
+
+.container #abbonati{
+	background-color: #49b8f1;
+	padding: 10px 4% 0px 4%;
+	font-size: 110%;
+	border: none;
+	text-align: center;
+	display: none;
+}
+
+.container .hamburger-menu,
+.container #cerca{
+	border: none;
+}
+@media screen and (min-width: 1286px){
+	.container #login{
+		display: inline;
+	}
+	.container #abbonati{
+		display: inline;
+	}
+
+}
+
+@media screen and(min-width: 1000px){
+	.navbar{
+		position: relative;
+		width: 1000px;
+	}
+	.container #sezioni{
+		width: 8%;
+	}
+	.container #edloc{
+		width: 10%;
+	}
+	.container #tv{
+		width: 8%;
+	}
+	.container #archivio{
+		width: 6%;
+	}
+	.container #trovocasa{
+		width: 7.4%;
+	}
+	.container #trovolavoro{
+		width: 8.8%
+	}
+	.container #cruciverba{
+		width: 7.5%;
+	}
+	.container #sezioni{
+		width: 9%;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;	
+}
+
+#menu-primary li{
+	float: left;
+	text-align: center;
+
+	list-style-type: none;
+	padding: 10px 7px 0 0;
+	margin: 0 0 0 8px;
+	margin-right: 1px solid white;
+}
+
+#menu-primary li span{
+	font-style: italic;
+	font-size: 120%;
+	color: #30a7fa;
+}
+
+#menu-primary li a:link,
+#menu-primary li a:visited{
+	color: white;
+}
+
+#menu-primary li a:hover{
+	color: #30a7fa;
+
+}
+
+/* END Regole Header*/
+
+/* START Regole content*/
+
+.main{
+	width: 75%;
+	min-height: 300px;
+	margin: auto;
+}
+
+#logo-corriere{
+	display: flex;
+	padding-top: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+.bigger-font{
+	font-size: 30px;
+}
+
+#logo-corriere a:hover,
+#logo-corriere a:visited,
+#logo-corriere a:link{
+	color: black;
+}
+
+.sotto-titolo{
+	padding: 8px 0 0 0;
+	text-align: center;
+	border-radius: 1000px;
+}
+
+.main-content{
+	position: relative;
+	padding: 20px 0 20px 0;
+}
+
+.no-border{
+	border-top: none;
+}
+
+.with-border{
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+/* END Regole content*/
+
+/* START Regole left content*/
+.left-container{
+	display: flex;	
+	width: 65%;
+	flex: 1;
+}
+
+.left-content{
+	width: 100%;
+	padding: 30px 10px 30px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+.leftcontent-rside{
+	float: right;
+	max-width: 48%;
+}
+
+.leftcontent-lside{
+	float: left;
+	max-width: 48%;
+}
+
+.gray-background{
+	background-color: #e7ebec;
+	border-top:none;
+	border-bottom: none;
+}
+
+ #seconda-notizia h3{
+	text-align: center;
+	padding: 0 0 15px 0;
+}
+
+.prima-pagina{
+	width: 100%;
+}
+
+h2{
+	padding: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 1350px){
+	.left-container{
+		width: 100%;
+	}
+}
+
+/* END Regole left content*/
+
+/* START Regole right content*/
+.right-container{
+	display: flex;
+	width: 30%;
+	flex: 2;
+}
+.right-content{
+	width: 100%;
+	margin: 70px 10px 10px 10px;
+}
+
+@media screen and (max-width: 1350px){
+	.right-container{
+		float: left;
+		width: 60%;
+	}
+}
+/* END Regole right content*/
+
+/* START Regole footer */
+
+.footer-settings{
+	display: none;
+	background-color: #576071;
+	position: fixed;
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+	height: 30px;
+	left: 0;
+	bottom: -10px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 130%;
+}
+
+#sub-below{
+	background-color: #49b8f1;
+	padding: 10px 20px 10px 20px;
+	border-right: 1px solid gray;
+}
+
+#login-below{
+	background-color: #49b8f1;
+	padding: 10px 10px 10px 10px;
+}
+
+.logo-below{
+	width: 100%;
+	float: left;
+	margin-top: 6%;
+	text-align: left;
+	padding-left: 100px;
+	padding-right:-100px;
+
+}
+
+@media screen and (max-width: 1286px){
+	.footer-settings{
+		display: inline;
+	}
+	.logo-below{
+		margin-bottom: 40px;
+	}
+} 
+
+/* END Regole footer */

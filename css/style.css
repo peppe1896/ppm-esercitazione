@@ -1,0 +1,300 @@
+/* START Regole generali */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", "sans-serif";
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #333;
+	background-color: #fff;
+
+}
+
+/* END Regole generali */
+
+/* START Regole Header */
+
+.navbar{
+	position: fixed;
+	display: flex;
+	
+	background-color: #576071;
+	min-height: 40px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.container{			
+	margin: 0 auto;
+	right: 100px;
+	width: 90%;
+	background-color: #576071;
+	z-index: 1;
+}
+
+.container li{
+	padding: 0 10px 0 10px;
+	border-right: 1px solid white;	
+	text-align: center;
+	height: 40px;
+}
+
+.container #login{
+	background-color: #49b8f1;
+	padding: 10px 2% 0 2%;
+	font-size: 100%;
+	border: none;
+	display: none;
+}
+
+.container #abbonati{
+	background-color: #49b8f1;
+	padding: 10px 4% 0px 4%;
+	font-size: 110%;
+	border: none;
+	text-align: center;
+	display: none;
+}
+
+.hamburger-menu{
+	display: none;
+}
+
+.container .hamburger-menu,
+.container #cerca{
+	border: none;
+}
+@media screen and (min-width: 800px){
+	.container #login{
+		display: inline;
+	}
+	.container #abbonati{
+		display: inline;
+	}
+
+}
+
+@media screen and (max-width: 1283px){
+	.container .hidable{
+		display: none;
+	}
+	#archivio{
+		border-right: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;	
+}
+
+#menu-primary{
+	display: flex;
+	flex-direction: row;
+}
+#menu-primary li{
+	
+	text-align: center;
+	list-style-type: none;
+	padding: 10px 7px 0 0;
+	margin: 0 0 0 8px;
+	margin-right: 1px solid white;
+}
+
+#menu-primary li span{
+	font-style: italic;
+	font-size: 120%;
+	color: #30a7fa;
+}
+
+#menu-primary li a:link,
+#menu-primary li a:visited{
+	color: white;
+}
+
+#menu-primary li a:hover{
+	color: #30a7fa;
+
+}
+
+.hamburger-menu{
+	padding: 5px 5px 5px 5px;
+	border: 1px white solid;
+}
+
+/* END Regole Header*/
+
+/* START Regole content*/
+
+.main{
+	margin: auto;
+	align-self: center;
+	width: 75%;
+	padding-top: 50px;
+}
+
+.header-corriere{
+	display: flex;
+	flex-basis: 100%;
+}
+#logo-corriere{
+	
+	padding-top: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+.bigger-font{
+	font-size: 30px;
+}
+
+#logo-corriere a:hover,
+#logo-corriere a:visited,
+#logo-corriere a:link{
+	color: black;
+}
+
+.sotto-titolo{
+	padding: 8px 0 0 0;
+	text-align: center;
+	border-radius: 1000px;
+}
+
+.main-content{
+	display: flex;
+	flex-basis: 50%;
+	padding: 20px 0 20px 0;
+}
+
+.no-border{
+	border-top: none;
+}
+
+.with-border{
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+/* END Regole content*/
+
+/* START Regole left content*/
+.left-container{
+	display: flex;	
+	flex-direction: column;
+	flex-basis: 60%;
+	margin-right: 15px;
+}
+
+.left-content{
+	width: 100%;
+	padding: 30px 10px 30px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+.leftcontent-rside{
+	max-width: 48%;
+}
+
+.leftcontent-lside{
+	max-width: 48%;
+}
+
+.gray-background{
+	background-color: #e7ebec;
+	border-top:none;
+	border-bottom: none;
+}
+
+ #seconda-notizia h3{
+	text-align: center;
+	padding: 0 0 15px 0;
+}
+
+.prima-pagina{
+	width: 100%;
+}
+
+h2{
+	padding: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 800px){
+	.main-content{
+		flex-direction: column;
+	}
+	.left-container{
+		width: 100%;
+		margin: auto;
+	}
+	.right-container{
+		width: 100%;
+		margin: auto; 
+	}
+}
+
+/* END Regole left content*/
+
+/* START Regole right content*/
+.right-container{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 38%;
+}
+.right-content{
+	width: 100%;
+	margin: 70px 10px 10px 10px;
+}
+
+/* END Regole right content*/
+
+/* START Regole footer */
+
+.footer-settings{
+	display: none;
+	background-color: #576071;
+	position: fixed;
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+	height: 30px;
+	left: 0;
+	bottom: -10px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 130%;
+}
+
+#sub-below{
+	background-color: #49b8f1;
+	padding: 10px 20px 10px 20px;
+	border-right: 1px solid gray;
+}
+
+#login-below{
+	background-color: #49b8f1;
+	padding: 10px 10px 10px 10px;
+}
+
+.logo-below{
+	width: 100%;
+	margin-top: 6%;
+	text-align: left;
+	padding-left: 100px;
+	padding-right:-100px;
+
+}
+
+@media screen and (max-width: 800px){
+	.footer-settings{
+		display: inline;
+	}
+	.logo-below{
+		margin-bottom: 40px;
+	}
+} 
+
+/* END Regole footer */
